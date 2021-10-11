@@ -1,9 +1,3 @@
-/*
- * Use this CSS to learn some intersting techniques,
- * in case you're wondering how I built the UI.
- * Have fun! 😁
- */
-
 * {
   margin: 0;
   padding: 0;
@@ -294,4 +288,124 @@ h2 {
 
 .timer {
   font-weight: 600;
+}
+
+/* -------------------------------------------------- MEDIA QUERIES -------------------------------------------------- */
+
+@media only screen and (max-width: 64em) {
+  nav {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .logo {
+    height: 4.5rem;
+  }
+
+  .login__input {
+    padding: 0.5rem 1rem;
+    width: 10rem;
+    margin-right: 0.5rem;
+  }
+
+  .login__btn {
+    font-size: 2rem;
+  }
+
+  .summary {
+    grid-row: 6/7;
+    grid-column: 1/-1;
+    justify-content: space-around;
+  }
+
+  .btn--sort {
+    margin-left: 0rem;
+  }
+
+  .movements {
+    grid-row: 5/6;
+    grid-column: 1/-1;
+  }
+
+  .operation {
+    justify-self: center;
+    width: 80%;
+    grid-column: 1/-1;
+  }
+
+  .operation--transfer {
+    grid-row: 2/3;
+  }
+
+  .operation--loan {
+    grid-row: 3/4;
+  }
+  .operation--close {
+    grid-row: 4/5;
+  }
+
+  .logout-timer {
+    grid-row: 7/8;
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: -1rem 0 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    padding: 2rem 1rem;
+  }
+
+  .welcome {
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    height: 2.5rem;
+  }
+
+  .login__input {
+    padding: 0.5rem;
+    width: 7rem;
+    height: 2rem;
+  }
+
+  .login__input::placeholder {
+    font-size: 1.2rem;
+  }
+
+  .login__btn {
+    font-size: 1.5rem;
+  }
+
+  .balance__label {
+    font-size: 1.6rem;
+  }
+
+  .balance__value {
+    font-size: 3rem;
+  }
+
+  .summary__label {
+    margin-right: 0.5rem;
+  }
+
+  .summary__value {
+    font-size: 1.6rem;
+    margin-right: 1rem;
+  }
+
+  .btn--sort {
+    font-size: 1.2rem;
+  }
+
+  .logout-timer {
+    font-size: 1.3rem;
+  }
 }
