@@ -5,3 +5,5 @@ This app looks like a real world bank app simulating various real world transact
 The login infos for all the available accounts are
 username: js, password: 1111
 username: jd, password: 2222
+
+https://bankist-real-app.netlify.app/
